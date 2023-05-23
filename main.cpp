@@ -1,4 +1,5 @@
 #include <iostream>
+#include <curses.h>
 using namespace std;
 
 bool gameOver;
@@ -47,6 +48,16 @@ void draw(){
 };
 
 void input(){
+    if ( keypad(stdscr, TRUE))
+ {
+        switch(getch()){
+            case 'a': dir = LEFT; break;
+            case 'd': dir = RIGHT; break;
+            case 'w': dir = UP; break;
+            case 's': dir = DOWN; break;
+            case 'x': gameOver = true; break;
+        }
+    }
 
 };
 

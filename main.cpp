@@ -35,11 +35,11 @@ void draw(){
         for (int j = 0; j <= width; j++){
             if(j == 0) //if on the edge  
                 cout << "#";
-            else //otherwise you're iin the middle
+            else //otherwise you're in the middle
                 cout << " ";
 
-            if( j == (width - 2))
-                cout << "*";
+            if(j == (width - 2))
+                cout << "#";
             
         };
         cout << endl;

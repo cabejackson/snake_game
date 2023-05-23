@@ -18,12 +18,7 @@ void setUp(){
     fruitY = rand() % height;
 
 };
-//attempting to make the matrix like this:
-//########
-//#      #
-//#      #
-//#      #
-//########
+
 void draw(){
 
     system("clear");

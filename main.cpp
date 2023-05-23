@@ -30,6 +30,10 @@ void draw(){
         for (int j = 0; j <= width; j++){
             if(j == 0 || j == (width - 1)) //if on the edge  
                 cout << "#";
+            else if (i == y && j == x)
+                cout << "O";
+            else if (i == fruitY && j == fruitX)
+                cout << "F";
             else //otherwise you're in the middle
                 cout << " ";
         };
